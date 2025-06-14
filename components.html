@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كهروبيديا - شروحات العناصر الإلكترونية</title>
+    <link rel="stylesheet" href="../components.css">
+    <script defer src="../components.js"></script>
+</head>
+<body>
+    <header>
+        <h1>مرحباً بكم في منصة كهروبيديا<br><span class="highlight-sub">للهندسة الكهربائية والإلكترونية</span></h1>
+        <nav>
+            <a href="index.html">الصفحة الرئيسية</a>
+            <a href="components.html">شروحات</a>
+            <a href="index.html">تواصل</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>العناصر</h2>
+            <ul id="component-list">
+                <li onclick="showComponent('resistor')">المقاومة</li>
+                <li onclick="showComponent('capacitor')">المكثف</li>
+                <li onclick="showComponent('diode')">الدايود</li>
+                <li onclick="showComponent('transistor')">الترانزستور</li>
+                <li onclick="showComponent('lamp')">المصباح</li>
+                <li onclick="showComponent('motor')">المحرك</li>
+                <li onclick="showComponent('relay')">الريلاي</li>
+                <li onclick="showComponent('diac')">الديّاك</li>
+                <li onclick="showComponent('triac')">التريّاك</li>
+                <li onclick="showComponent('scr')">SCR</li>
+                <li onclick="showComponent('opamp')">المضخم التشغيلي</li>
+                <li onclick="showComponent('zener')">زينر دايود</li>
+                <li onclick="showComponent('photodiode')">دايود ضوئي</li>
+                <li onclick="showComponent('led')">LED</li>
+                <li onclick="showComponent('lcd')">شاشة LCD</li>
+                <li onclick="showComponent('buzzer')">الطنّان</li>
+                <li onclick="showComponent('ldr')">حساس الضوء</li>
+                <li onclick="showComponent('thermistor')">حساس حرارة</li>
+                <li onclick="showComponent('potentiometer')">مقاومة متغيرة</li>
+                <li onclick="showComponent('crystal')">كريستالة</li>
+                <li onclick="showComponent('fuse')">فيوز</li>
+                <li onclick="showComponent('switch')">مفتاح</li>
+                <li onclick="showComponent('serresistor')">مقاومات على التوالي</li>
+                <li onclick="showComponent('parresistor')">مقاومات على التوازي</li>
+                <li onclick="showComponent('serbat')">بطاريات على التوالي</li>
+                <li onclick="showComponent('parbat')">بطاريات على التوازي</li>
+                <li onclick="showComponent('superposition')">نظرية Superposition</li>
+                <li onclick="showComponent('thevenin')">نظرية ثيفنين</li>
+                <li onclick="showComponent('norton')">نظرية نورتن</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="resistor" class="component-box">
+                <h2>المقاومة (Resistor)</h2>
+                <p>تُستخدم لتقليل التيار أو توزيع الجهد.</p>
+                <p>الوحدة: أوم (Ω)</p>
+                <p>الرمز: R</p>
+                <p>القانون: V = I × R</p>
+                <img src="../images/resistor.png" alt="رمز المقاومة">
+            </div>
+
+            <div id="capacitor" class="component-box">
+                <h2>المكثف (Capacitor)</h2>
+                <p>يخزن الطاقة على شكل مجال كهربائي.</p>
+                <p>الوحدة: فاراد (F)</p>
+                <p>الرمز: C</p>
+                <img src="../images/capacitor.png" alt="رمز المكثف">
+            </div>
+
+            <div id="diode" class="component-box">
+                <h2>الدايود (Diode)</h2>
+                <p>يسمح بمرور التيار في اتجاه واحد فقط.</p>
+                <p>الرمز: D</p>
+                <img src="../images/diode.png" alt="رمز الدايود">
+            </div>
+
+            <div id="transistor" class="component-box">
+                <h2>الترانزستور (Transistor)</h2>
+                <p>يُستخدم كمفتاح أو مكبر للإشارة.</p>
+                <p>أنواعه: BJT و MOSFET</p>
+                <img src="../images/transistor.png" alt="رمز الترانزستور">
+            </div>
+
+            <div id="lamp" class="component-box">
+                <h2>المصباح (Lamp)</h2>
+                <p>يُستخدم لتحويل الطاقة الكهربائية إلى ضوء.</p>
+                <p>الأنواع: LED / مصباح تقليدي</p>
+                <img src="../images/lamp.png" alt="رمز المصباح">
+            </div>
+
+            <div id="motor" class="component-box">
+                <h2>المحرك (Motor)</h2>
+                <p>يحوّل الطاقة الكهربائية إلى طاقة ميكانيكية.</p>
+                <p>الأنواع: AC / DC</p>
+                <img src="../images/motor.png" alt="رمز المحرك">
+            </div>
+
+            <div id="relay" class="component-box">
+                <h2>الريلاي (Relay)</h2>
+                <p>مفتاح كهربائي يعمل بتيار صغير للتحكم في تيار أكبر.</p>
+                <p>يُستخدم في دوائر التحكم والأمان.</p>
+                <img src="../images/relay.png" alt="رمز الريلاي">
+            </div>
+            <div id="relay" class="component-box">
+                <h2>الريلاي (Relay)</h2>
+                <p>مفتاح كهربائي يعمل بتيار صغير للتحكم في تيار أكبر.</p>
+                <p>يستخدم في دوائر التحكم والأمان.</p>
+            </div>
+
+            <div id="diac" class="component-box">
+                <h2>الديّاك (DIAC)</h2>
+                <p>عنصر إلكتروني ثنائي الاتجاه يستخدم في تشغيل الترياك.</p>
+                <p>يعمل عند تجاوز جهد معين في أي من الاتجاهين.</p>
+            </div>
+
+            <div id="triac" class="component-box">
+                <h2>التريّاك (TRIAC)</h2>
+                <p>عنصر نصف ناقل يستخدم للتحكم في التيار المتردد AC.</p>
+                <p>يمكنه التوصيل في كلا الاتجاهين.</p>
+            </div>
+
+            <div id="scr" class="component-box">
+                <h2>الـ SCR (Silicon Controlled Rectifier)</h2>
+                <p>يعمل كمفتاح إلكتروني يتحكم فيه بالإشارة على الـ Gate.</p>
+                <p>يستخدم في دوائر الطاقة والـ Rectification.</p>
+            </div>
+
+            <div id="opamp" class="component-box">
+                <h2>المضخم التشغيلي (Op-Amp)</h2>
+                <p>يُستخدم لتكبير الإشارات الكهربائية.</p>
+                <p>يعمل بفرق الجهد بين المدخل الموجب والسالب.</p>
+            </div>
+
+            <div id="zener" class="component-box">
+                <h2>زينر دايود (Zener Diode)</h2>
+                <p>يسمح بمرور التيار في الاتجاه العكسي عند جهد معين (جهد الزينر).</p>
+                <p>يستخدم في تنظيم الجهد.</p>
+            </div>
+
+            <div id="photodiode" class="component-box">
+                <h2>الدايود الضوئي (Photodiode)</h2>
+                <p>يستشعر الضوء ويحوله إلى تيار كهربائي.</p>
+                <p>يُستخدم في الحساسات وأنظمة الاتصالات.</p>
+            </div>
+
+            <div id="led" class="component-box">
+                <h2>الدايود الباعث للضوء (LED)</h2>
+                <p>يحول الطاقة الكهربائية إلى ضوء عند مرور التيار.</p>
+                <p>يُستخدم في الإضاءة والمؤشرات.</p>
+            </div>
+
+            <div id="lcd" class="component-box">
+                <h2>شاشة العرض البلورية (LCD)</h2>
+                <p>تُستخدم لعرض البيانات باستخدام البلورات السائلة.</p>
+                <p>تحتاج إلى دائرة تحكم مثل المايكروكنترولر.</p>
+            </div>
+
+            <div id="buzzer" class="component-box">
+                <h2>الطنّان (Buzzer)</h2>
+                <p>يحول الإشارة الكهربائية إلى صوت تنبيهي.</p>
+                <p>يستخدم في الإنذارات والتنبيهات.</p>
+            </div>
+
+            <div id="ldr" class="component-box">
+                <h2>حساس الضوء (LDR)</h2>
+                <p>مقاومته تتغير حسب شدة الضوء.</p>
+                <p>يُستخدم في أنظمة الإنارة التلقائية.</p>
+            </div>
+
+            <div id="thermistor" class="component-box">
+                <h2>حساس الحرارة (Thermistor)</h2>
+                <p>تتغير مقاومته حسب درجة الحرارة.</p>
+                <p>يُستخدم في دوائر الحماية الحرارية.</p>
+            </div>
+
+            <div id="potentiometer" class="component-box">
+                <h2>المقاومة المتغيرة (Potentiometer)</h2>
+                <p>تستخدم لضبط الجهد أو التيار يدويًا.</p>
+                <p>تُستخدم في التحكم في الصوت والإضاءة.</p>
+            </div>
+
+            <div id="crystal" class="component-box">
+                <h2>الكريستالة (Crystal Oscillator)</h2>
+                <p>تُستخدم لتوليد تردد دقيق وثابت.</p>
+                <p>ضرورية في الساعات والمايكروكنترولر.</p>
+            </div>
+
+            <div id="fuse" class="component-box">
+                <h2>الفيوز (Fuse)</h2>
+                <p>وسيلة حماية كهربائية تقطع التيار عند الحمل الزائد.</p>
+            </div>
+
+            <div id="switch" class="component-box">
+                <h2>المفتاح (Switch)</h2>
+                <p>يستخدم لفتح أو غلق الدائرة الكهربائية يدويًا.</p>
+            </div>
+            <div id="serresistor" class="component-box">
+                <h2>توصيل المقاومات على التوالي</h2>
+                <p>في هذا النوع، تتصل المقاومات واحدة بعد الأخرى، ويكون التيار نفسه يمر بكل المقاومات.</p>
+                <p><strong>القانون:</strong> R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ...</p>
+                <img src="../images/serresistor.png" alt="توصيل المقاومات على التوالي">
+            </div>
+
+            <div id="parresistor" class="component-box">
+                <h2>توصيل المقاومات على التوازي</h2>
+                <p>في هذا النوع، تتصل المقاومات جميعها بين نفس النقطتين، ويكون الجهد نفسه على كل مقاومة.</p>
+                <p><strong>القانون:</strong> 1/R<sub>eq</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub> + ...</p>
+                <img src="../images/parresistor.png" alt="توصيل المقاومات على التوازي">
+            </div>
+
+            <div id="serbat" class="component-box">
+                <h2>توصيل البطاريات على التوالي</h2>
+                <p>عند توصيل البطاريات على التوالي، يُجمع الجهد الكلي، بينما يظل التيار ثابتًا.</p>
+                <p><strong>القانون:</strong> V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + V<sub>3</sub> + ...</p>
+                <img src="../images/serbat.png" alt="توصيل البطاريات على التوالي">
+            </div>
+
+            <div id="parbat" class="component-box">
+                <h2>توصيل البطاريات على التوازي</h2>
+                <p>عند توصيل البطاريات على التوازي، يُحافظ على الجهد، ويُجمع التيار.</p>
+                <p><strong>القانون:</strong> I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub> + ...</p>
+                <img src="../images/parbat.png" alt="توصيل البطاريات على التوازي">
+            </div>
+
+            <div id="superposition" class="component-box">
+                <h2>نظرية التراكب (Superposition)</h2>
+                <p>تُستخدم لتحليل الدوائر متعددة المصادر. تنص النظرية على أن: تأثير كل مصدر يتم تحليله بشكل منفصل، ثم تُجمع التأثيرات الكلية.</p>
+                <p><strong>خطوات:</strong></p>
+                <ul>
+                    <li>قم بإلغاء كل المصادر ما عدا واحدًا (ألغِ الجهد بوضع قصر، والتيار بوضع فتح).</li>
+                    <li>احسب الجهد أو التيار الناتج.</li>
+                    <li>كرر لكل مصدر.</li>
+                    <li>اجمع كل النتائج جبريًا.</li>
+                </ul>
+            </div>
+
+            <div id="thevenin" class="component-box">
+                <h2>نظرية ثيفنين (Thevenin's Theorem)</h2>
+                <p>تنص النظرية على أن أي دائرة خطية يمكن استبدالها بمصدر جهد مكافئ (V<sub>th</sub>) ومقاومة مكافئة (R<sub>th</sub>).</p>
+                <p><strong>خطوات:</strong></p>
+                <ul>
+                    <li>أزل الحمل المطلوب.</li>
+                    <li>احسب الجهد المفتوح (V<sub>th</sub>).</li>
+                    <li>ألغِ جميع المصادر واحسب R<sub>th</sub>.</li>
+                    <li>أعد توصيل الحمل لحساب التيار أو الجهد.</li>
+                </ul>
+            </div>
+
+            <div id="norton" class="component-box">
+                <h2>نظرية نورتن (Norton's Theorem)</h2>
+                <p>تشير إلى أن أي دائرة خطية يمكن تمثيلها بمصدر تيار مكافئ (I<sub>n</sub>) ومقاومة مكافئة (R<sub>n</sub>).</p>
+                <p><strong>خطوات:</strong></p>
+                <ul>
+                    <li>أزل الحمل.</li>
+                    <li>احسب التيار المار بالخرج مباشرة (I<sub>n</sub>).</li>
+                    <li>احسب R<sub>n</sub> بنفس خطوات ثيفنين.</li>
+                    <li>أعد توصيل الحمل.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
