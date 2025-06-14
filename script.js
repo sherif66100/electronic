@@ -13,3 +13,12 @@ function sendWhatsApp() {
 
     window.open(url, '_blank');
 }
+function showComponent(id) {
+    const sections = document.querySelectorAll('.component-section');
+    sections.forEach(section => section.style.display = 'none');
+
+    const target = document.getElementById(id);
+    if (target) {
+        target.style.display = 'block';
+    }
+}
