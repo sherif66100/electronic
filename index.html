@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,34 +9,51 @@
 </head>
 
 <body>
- 
-<header class="main-header">
-  <div class="container">
-    <div class="logo">
-      <h1>كهروبيديا</h1>
-    </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="components.html">الشروحات</a></li>
-        <li><a href="#">من أنا</a></li>
-        <li><a href="#">الصور والفيديوهات</a></li>
-        <li><a href="#">تواصل معنا</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header>
+        <h1>مرحباً بكم في منصة كهروبيديا<br><span class="highlight-sub">للهندسة الكهربائية والإلكترونية</span></h1>
+        <nav>
+            <a href="index.html">تواصل</a>
+            <a href="components.html">شروحات</a>
+            <a href="index.html">الصفحة الرئيسية</a>
 
-<!-- ✅ بانر ترحيبي -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h2>مرحبًا بك في كهروبيديا</h2>
-    <p>تعلم الهندسة الكهربائية والإلكترونية بأسلوب مبسط واحترافي</p>
-    <a href="components.html" class="hero-btn">ابدأ الآن</a>
-  </div>
-</section>
+
+        </nav>
+    </header>
+   
+
+
+
+
+
+    <section id="about">
+        <h2>من أنا؟</h2>
+        <div class="about-container">
+            <img src="profile.jpeg" alt="صورة شخصية" class="profile-img">
+            <div class="about-text">
+                <p>
+                    مهندس شريف متولي، مدرس الهندسة الكهربائية والإلكترونية لطلاب التطبيقي والجامعات،
+                    للحجز يمكنكم التواصل على
+                    للتواصل : <strong>51014962</strong>
+                    أو تقدر تتواصل على الواتساب مباشرة:
+                    <a href="https://wa.me/96551014962" target="_blank" style="color: #25D366; font-weight: bold;">اضغط هنا</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>تواصل معي</h2>
+        <form onsubmit="sendWhatsApp(); return false;">
+            <label for="name">الاسم:</label><br>
+            <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا">
+            <input type="text" id="email" name="email" placeholder="رقم الموبايل">
+<textarea id="message" name="message" placeholder="اكتب رسالتك هنا"></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
 
 
     <script src="script.js"></script>
 </body>
 </html>    
+
