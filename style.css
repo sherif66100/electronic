@@ -63,9 +63,9 @@ section {
 }
 
 .profile-img {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  border-radius: 25%;
   object-fit: cover;
   border: 3px solid #333;
 }
