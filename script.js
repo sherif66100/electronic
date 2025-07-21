@@ -1,4 +1,4 @@
-﻿console.log("مرحباً بك في موقعي الشخصي!");
+console.log("  مدرس كهرباء و الكترونيات وميكانيكا !");
 function sendWhatsApp() {
     var name = document.getElementById("name").value;
     var phone = document.getElementById("email").value;
