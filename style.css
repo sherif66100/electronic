@@ -172,3 +172,21 @@ nav {
         nav a:hover {
             background-color: #16a085;
         }
+        .meta-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 10px;
+  direction: rtl;
+}
+
+@media (max-width: 600px) {
+  .meta-text {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
