@@ -190,3 +190,21 @@ nav {
     padding: 8px 10px;
   }
 }
+/* تنسيق النص الجديد ليظهر بشكل جيد على الموبايل فقط */
+.mobile-seo-text {
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+/* يظهر النص ده بس في الموبايلات */
+@media (max-width: 768px) {
+  .mobile-seo-text {
+    display: block;
+  }
+}
