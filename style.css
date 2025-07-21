@@ -11,11 +11,17 @@ body {
 header {
   background-color: #2c3e50;
   color: white;
-  padding: 20px;
+  padding: 10px 15px; /* تم تقليل المساحة داخل الهيدر */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  position: relative;
+  position: relative; /* تم إزالة التثبيت */
   z-index: 1000;
+}
+
+header h1 {
+  font-size: 18px; /* تصغير حجم الخط داخل الهيدر */
+  line-height: 1.5;
+  margin: 0;
 }
 
 .highlight-sub {
@@ -124,6 +130,11 @@ section {
   section {
     margin: 15px;
     padding: 20px;
+  }
+
+  header h1 {
+    font-size: 16px; /* كمان تصغير للموبايل */
+    line-height: 1.4;
   }
 }
 
