@@ -208,3 +208,12 @@ nav {
     display: block;
   }
 }
+.meta-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  font-weight: bold;
+  color: #000;
+}
