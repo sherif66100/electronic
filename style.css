@@ -209,11 +209,24 @@ nav {
   }
 }
 .meta-text {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   font-weight: bold;
   color: #000;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: right;
+  direction: rtl;
+}
+
+/* تنسيق خاص للموبايل */
+@media (max-width: 768px) {
+  .meta-text {
+    font-size: 13px;
+    padding: 15px;
+    line-height: 1.6;
+  }
 }
