@@ -1,92 +1,171 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>م. شريف متولي | دروس خصوصية في الدوائر الكهربائية والإلكترونيات - الكويت</title>
+<meta name="description" content="دروس خصوصية في الدوائر الكهربائية والإلكترونيات والفيزياء والآلات الكهربائية لطلاب الجامعات والمعاهد التطبيقية في الكويت. للحجز: 51014962">
+<meta name="author" content="شريف متولي">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #10222F;
+    --ink-soft: #46586A;
+    --paper: #F5F8FA;
+    --card: #FFFFFF;
+    --line: #D5DEE6;
+    --trace: #0E7C86;
+    --trace-dark: #0A5F67;
+    --spark: #F2B705;
+    box-sizing: border-box;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.9;
+    font-size: 17px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
 
-  <title>مدرس هندسة كهربائية وإلكترونية وميكانيكا - مهندس شريف متولي</title>
+  /* Header */
+  header { border-bottom: 1px solid var(--line); background: var(--card); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; gap: 12px; }
+  .brand { font-weight: 700; font-size: 18px; }
+  .brand small { display: block; font-weight: 400; font-size: 13px; color: var(--ink-soft); line-height: 1.4; }
+  .header-call {
+    background: var(--ink); color: #fff; text-decoration: none;
+    padding: 8px 16px; border-radius: 8px; font-weight: 500; font-size: 15px; white-space: nowrap;
+  }
 
-  <!-- وصف الموقع -->
-  <meta name="description" content="مدرس هندسة كهربائية وإلكترونية وميكانيكا - خبرة كبيرة بالتدريس في كليات الهندسة والمعاهد.">
+  /* Hero */
+  .hero { padding: 48px 0 36px; }
+  h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.5; margin: 0 0 14px; font-weight: 700; }
+  .lead { color: var(--ink-soft); margin: 0 0 26px; max-width: 34em; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 13px 26px; border-radius: 10px; text-decoration: none;
+    font-weight: 700; font-size: 17px; font-family: inherit; border: 2px solid transparent;
+  }
+  .btn-call { background: var(--trace); color: #fff; }
+  .btn-call:hover { background: var(--trace-dark); }
+  .btn-wa { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-wa:hover { background: var(--ink); color: #fff; }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--spark); outline-offset: 3px; }
 
-  <!-- الكلمات المفتاحية -->
-  <meta name="keywords" content="مدرس هندسة كهربائية, مدرس هندسة إلكترونية, مدرس ميكانيكا, مدرس كهرباء, مدرس إلكترونيات, مدرس فيزياء, مدرس آلات, مدرس دوائر كهربائية, مدرس MATLAB, مدرس PSPICE, مدرس CNC, مدرس تحكم, مدرس MULTISIM">
+  /* Circuit trace divider: the one distinctive element */
+  .trace { display: block; width: 100%; height: 28px; margin: 8px 0 0; }
+  .trace path { stroke: var(--trace); stroke-width: 2; fill: none; }
+  .trace circle { fill: var(--paper); stroke: var(--trace); stroke-width: 2; }
+  .trace circle.on { fill: var(--spark); stroke: var(--ink); }
 
-  <meta name="author" content="مهندس شريف متولي">
+  section { padding: 30px 0; }
+  h2 { font-size: 24px; margin: 0 0 14px; line-height: 1.5; }
+  p { margin: 0 0 12px; }
 
-  <link rel="stylesheet" href="style.css">
+  .subjects { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .subjects li { background: var(--card); border: 1px solid var(--line); border-right: 4px solid var(--trace); border-radius: 6px; padding: 12px 16px; }
+  .subjects strong { display: block; }
+  .subjects span { color: var(--ink-soft); font-size: 15px; }
+
+  .plain { padding-right: 20px; margin: 0; }
+  .plain li { margin-bottom: 8px; }
+
+  .contact { background: var(--ink); color: #fff; border-radius: 14px; padding: 28px 24px; }
+  .contact h2 { color: #fff; }
+  .contact p { color: #D9E3EA; }
+  .contact a.plainlink { color: #fff; }
+  .contact .btn-wa { color: #fff; border-color: #fff; }
+  .contact .btn-wa:hover { background: #fff; color: var(--ink); }
+  .phone { font-size: 30px; font-weight: 700; direction: ltr; unicode-bidi: plaintext; display: inline-block; letter-spacing: 1px; }
+
+  .notice { font-size: 14px; color: var(--ink-soft); border-top: 1px solid var(--line); margin-top: 28px; padding-top: 16px; }
+  footer { padding: 24px 0 40px; font-size: 14px; color: var(--ink-soft); }
+  footer a { color: var(--ink-soft); }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
 </head>
-
 <body>
-  <!-- كلمات مفتاحية مخفية لتحسين السيو -->
-<div style="display:none">
-مدرس كهرباء، مدرس إلكترونيات، مدرس ميكانيكا ، مدرس هندسة كهربائية، مدرس دوائر كهربائية، مدرس فيزياء، مدرس كهرباء، مدرس ميكانيكا، مدرس شبكات كهربائية، مدرس استاتيكا، مدرس مولدات، مدرس محطات تحويل، مدرس MATLAB، مدرس MULTISIM، مدرس PSPICE، مدرس CNC، مدرس EASYEDA، مدرس AUM، مدرس AUK، مدرس AIU، مدرس جامعة الكويت، مدرس معهد تطبيقي، مدرس مواد هندسية، مدرس دوائر رقمية، مدرس إلكترونيات القوى.
-</div>
-  <header>
-    <h1>
-    
-    مدرس هندسة كهربائية وإلكترونية وميكانيكا للتطبيقي والجامعات في الكويت<br>
-      مدرس كهرباء مدرس الكترونيات مدرس  هندسة كهربائية  مدرس دوائر كهربائية الكترونية رقمية 
-      للتواصل : 51014962
-      <span class="highlight-sub">مدرس معتمد بخبرة طويلة في المواد الهندسية</span>
-    </h1>
-    <nav>
-   
-     <a href="https://wa.me/96551014962" target="_blank">
-  <button style="font-size: 24px; padding: 12px 24px;">
-    <span style="color: red;">📞</span> اتصل الآن
-  </button>
-</a>
-</a>
-      <a href="components.html">شروحات</a>
-      <a href="index.html">الصفحة الرئيسية</a>
-        <a href="privacy.html">سياسة الخصوصية</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>من أنا؟</h2>
-    <div class="about-container">
-      <img src="images/مدرس-هندسة-كهربائية-والكترونية-للتطبيقي-والجامعات-51014962.jpeg.jpg" alt="مدرس هندسة كهربائية وإلكترونية" class="profile-img">
-      <div class="about-text">
-        <p>مهندس شريف متولي، مدرس الهندسة الكهربائية والإلكترونية والميكانيكا لطلاب التطبيقي والجامعات في الكويت. للحجز: <strong>51014962</strong> أو عبر <a href="https://wa.me/96551014962" target="_blank" style="color: #25D366; font-weight: bold;">الواتساب</a>.</p>
+<header>
+  <div class="wrap">
+    <div class="brand">م. شريف متولي<small>مدرس خصوصي - هندسة كهربائية وإلكترونيات</small></div>
+    <a class="header-call" href="tel:+96551014962">اتصل: 51014962</a>
+  </div>
+</header>
 
-        <div class="meta-text">
-          مدرس خبرة بمناهج جامعة الكويت وكليات الهندسة والمعاهد التطبيقية<br>
-          مدرس فيزياء 101/102/121/122/115<br>
-          مدرس إلكترونيات<br>
-          مدرس دوائر كهربائية<br>
-          مدرس في: ACK - AUK - AIU - ACM - KCST - AU - AUM<br>
-          مدرس فيزياء، مدرس رياضيات، مدرس كهرباء، مدرس إلكترونيات، مدرس اتصالات، مدرس تحكم، مدرس طاقة<br>
-          مدرس شبكات كهربائية، مدرس محطات تحويل، مدرس مولدات، مدرس محركات، مدرس دوائر رقمية، مدرس أجهزة قياس<br>
-          مدرس إلكترونيات القوى، مدرس كهرباء قوى، مدرس ميكانيكا<br>
-          مدرس معهد الطاقة، مدرس كلية التربية الأساسية، مدرس كلية التكنولوجيا والاتصالات والملاحة<br>
-          مدرس محولات كهربائية، مدرس ألياف ضوئية، مدرس هوائيات، مدرس تطبيقات كهرومغناطيسية، مدرس اتصالات معلومات<br>
-          مدرس حسابات قوى كهربائية، مدرس تخصصات النقل والتوزيع، مدرس طاقة متجددة، مدرس كمبيوتر، مدرس معدات طبية<br>
-          
-          مدرس MULTISIM - مدرس MATLAB - مدرس CNC - مدرس LTSPICE - مدرس PSPICE - مدرس FALSTAD - مدرس EASYEDA
-          للتواصل والحجز : 51014962
-        </div>
+<main class="wrap">
+
+  <div class="hero">
+    <h1>دروس خصوصية في الدوائر الكهربائية والإلكترونيات</h1>
+    <p class="lead">أنا مهندس شريف متولي، أقدّم دروسًا خصوصية لطلاب الجامعات والمعاهد التطبيقية في الكويت. أشرح المنهج خطوة بخطوة وأحل معك التمارين حتى تفهم الفكرة وتذاكر بثقة.</p>
+    <div class="actions">
+      <a class="btn btn-call" href="tel:+96551014962">اتصل الآن: 51014962</a>
+      <a class="btn btn-wa" href="https://wa.me/96551014962" rel="noopener">راسلني على واتساب</a>
+    </div>
+    <svg class="trace" viewBox="0 0 700 28" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 14 H120 L140 4 H260 L280 14 H420 L440 24 H560 L580 14 H700"/>
+      <circle cx="120" cy="14" r="5"/>
+      <circle cx="280" cy="14" r="5" class="on"/>
+      <circle cx="440" cy="24" r="4"/>
+      <circle cx="580" cy="14" r="5"/>
+    </svg>
+  </div>
+
+  <section id="subjects">
+    <h2>المواد التي أدرّسها</h2>
+    <ul class="subjects">
+      <li><strong>الدوائر الكهربائية</strong><span>تحليل الدوائر، قوانين كيرشوف، الدوائر المتناوبة</span></li>
+      <li><strong>الإلكترونيات</strong><span>الدايود والترانزستور والمضخمات</span></li>
+      <li><strong>الدوائر الرقمية</strong><span>البوابات المنطقية والدوائر التتابعية</span></li>
+      <li><strong>الآلات الكهربائية</strong><span>المحولات والمحركات والمولدات</span></li>
+      <li><strong>الفيزياء الجامعية</strong><span>الكهرباء والمغناطيسية والميكانيكا</span></li>
+      <li><strong>برامج المحاكاة</strong><span>MATLAB وMultisim وLTspice</span></li>
+    </ul>
+  </section>
+
+  <section id="how">
+    <h2>كيف تتم الدروس؟</h2>
+    <ul class="plain">
+      <li>تتصل بي أو تراسلني وتخبرني بالمادة والمستوى وموعد الاختبار.</li>
+      <li>نتفق على موعد مناسب، وتكون الحصة حضورية أو عن بُعد حسب ما يناسبك.</li>
+      <li>أشرح النقاط الصعبة وأحل معك تمارين من منهجك، وأراجع معك قبل الاختبار.</li>
+    </ul>
+    <p style="margin-top:14px">المنطقة: <strong>الكويت</strong></p>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>للحجز والاستفسار</h2>
+      <p>الاتصال أو واتساب على الرقم:</p>
+      <p><a class="phone plainlink" href="tel:+96551014962">51014962</a></p>
+      <p>البريد الإلكتروني: <a class="plainlink" href="mailto:Sherif.omar2323@gmail.com" dir="ltr">Sherif.omar2323@gmail.com</a></p>
+      <div class="actions" style="margin-top:16px">
+        <a class="btn btn-call" href="tel:+96551014962">اتصل الآن</a>
+        <a class="btn btn-wa" href="https://wa.me/96551014962" rel="noopener">واتساب</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>تواصل معي</h2>
-    <form onsubmit="sendWhatsApp(); return false;">
-      <label for="name">الاسم:</label><br>
-      <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا">
-      <input type="text" id="email" name="email" placeholder="رقم الموبايل">
-      <textarea id="message" name="message" placeholder="اكتب رسالتك هنا"></textarea>
-      <button type="submit">إرسال</button>
-    </form>
-  </section>
+  <p class="notice">
+    أقدّم دروسًا خصوصية بصفتي مدرسًا مستقلًا، ولا أمثّل أي جامعة أو معهد. أسماء الجامعات والمعاهد تُذكر للتعريف بالمناهج التي يدرسها الطلاب فقط.
+    <br>للاطلاع على كيفية التعامل مع بياناتك: <a href="privacy.html">سياسة الخصوصية</a>.
+  </p>
 
-  <script src="script.js"></script>
-  <footer style="text-align: center; margin-top: 20px;">
-    <a href="privacy.html" style="color: blue; text-decoration: underline;">Privacy Policy - سياسة الخصوصية</a>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 شريف متولي - الكويت · <a href="privacy.html">سياسة الخصوصية</a>
+  </div>
 </footer>
-</body>
 
+</body>
 </html>
